@@ -1,0 +1,11 @@
+<div class ='labels-row'>
+    <div class="input-box">
+    <input type="text" id="labelList" [(ngModel)]="labelListInput" maxlength="100" style="width: 300px;">
+    <button (click)="addLabel()" class="AddLabel-Btn">Add Label</button>
+</div>
+<div class="Labels">
+    <button *ngFor="let label of labelList" (click)="onLabelSelect(label)" [style.background-color]="label.color" [style.color]="'white'"
+class="Label"    
+    >{{ label.label }}</button>
+</div>
+</div>  

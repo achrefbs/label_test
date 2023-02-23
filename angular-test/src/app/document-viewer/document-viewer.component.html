@@ -1,0 +1,4 @@
+<div style="margin-top: 20px;">
+  <button *ngFor="let word of words;"
+    [style.background-color]="word.label?.color || 'white'" [style.color]="word.label? 'white': 'black'" (click)="onWordClicked(word)">{{ word.word }}</button>
+</div>

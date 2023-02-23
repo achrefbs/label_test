@@ -1,0 +1,33 @@
+button {
+    background-color: transparent;
+    border-color: black;
+}
+.labels-row {
+    display: flex;
+    justify-content: flex-start;
+}
+.input-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 550px;
+}
+.AddLabel-Btn {
+    white-space: nowrap;
+    min-width: auto;
+}
+.Labels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Label {
+    cursor: pointer;
+    font-size:small;
+    padding: 3px 20px 3px 10px;
+    border-radius: 5px;
+    margin: auto 5px;
+    white-space: wrap;
+    margin-bottom: 10px;
+}

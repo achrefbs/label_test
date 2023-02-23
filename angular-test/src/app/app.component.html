@@ -1,0 +1,4 @@
+<app-label-list [labelList]="labelList" (onLabelSelected)="getLabel($event)"></app-label-list>
+<app-document-upload (fileUploaded)="onFileUploaded($event)"></app-document-upload>
+<app-document-viewer [words]="words" (WordClicked)="onWordLabeled($event)"></app-document-viewer>
+<button *ngIf="documentContent" (click)="annotate()">Download</button>
